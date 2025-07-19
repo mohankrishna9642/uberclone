@@ -6,7 +6,7 @@ The system enables a user to request a ride, processes the ride request using Ka
 
 ---
 
-## 🧠 Core Features
+##  Core Features
 
 - **Ride Request Handling**: When a user requests a ride, the request data is sent to Kafka and then consumed and stored in the Oracle database.
   
@@ -20,7 +20,7 @@ The system enables a user to request a ride, processes the ride request using Ka
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Spring Boot** – Backend framework
 - **Apache Kafka** – Message queue for asynchronous processing
@@ -29,7 +29,7 @@ The system enables a user to request a ride, processes the ride request using Ka
 
 ---
 
-## ⚙️ Kafka Integration
+##  Kafka Integration
 
 - The application uses Kafka **Producer** to send ride request data to a Kafka **Topic**.
 - A Kafka **Consumer** listens to the topic and stores the ride data into Oracle DB.
@@ -37,7 +37,7 @@ The system enables a user to request a ride, processes the ride request using Ka
 
 ---
 
-## 🗄️ Database Tables (Oracle)
+##  Database Tables (Oracle)
 
 ### `RIDES` Table
 
@@ -55,7 +55,7 @@ The system enables a user to request a ride, processes the ride request using Ka
 
 ---
 
-## 🔄 Flow of Data
+##  Flow of Data
 User Request Ride
 ↓
 Kafka Producer (sends message)
@@ -74,7 +74,7 @@ Ride marked as ACCEPTED and user notified with driver details
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 You can use **Postman** or any API testing tool to simulate:
 
@@ -86,7 +86,7 @@ All data will be stored and updated in Oracle DB through Kafka processing.
 
 ---
 
-## 📦 Future Scope
+##  Future Scope
 
 - Authentication (JWT) for drivers and users
 - Real-time notifications via WebSocket
@@ -95,7 +95,7 @@ All data will be stored and updated in Oracle DB through Kafka processing.
 
 ---
 
-## 👨‍💻 Developer
+## Developer
 
 **Your Name**  
 Uber-like Ride Booking System — Kafka + Oracle
